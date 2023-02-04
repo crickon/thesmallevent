@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    text-align: right;
+}
+
+.nav-list {
+    color:purple;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list a {
+    padding: 15px;
+}

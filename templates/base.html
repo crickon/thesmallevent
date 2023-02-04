@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - TheSmallEvent</title>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/volunteer">Volunteer</a></li>
+            <li><a href="/propose">Submit Project</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
