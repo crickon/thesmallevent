@@ -1,10 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Navigation bar Top Right styles */
 .nav-bar {
-    text-align: right;
+    float: left;
+    background-color: #a1a1a1;
+    width: 100%;
 }
 
 .nav-list {
@@ -15,4 +22,59 @@ body {
 
 .nav-list a {
     padding: 15px;
+}
+
+.content {
+    clear: both;
+}
+
+/* Form styles */
+.form-wrapper {
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+    width: 80%;
+}
+
+form {
+    border: 5px solid #f1f1f1;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 18;
+}
+
+.form-items label {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.form-items input {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button-holder {
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.button-holder button {
+    background-color: #4286f4;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grab;
+    width: 48%;
+}
+
+button:hover {
+    opacity: 0.8;
 }
