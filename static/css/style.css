@@ -1,3 +1,15 @@
+/*
+Color Palete
+3F3047
+46ACC2
+498C8A
+4B6858
+4D4730
+
+Break Colors
+3F3047
+*/
+
 html {
     box-sizing: border-box;
 }
@@ -5,23 +17,32 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: #c3dbce;
 }
+
+input, textarea {
+    background-color : #c3dbce; 
+}
+  
 
 /* Navigation bar Top Right styles */
 .nav-bar {
     float: left;
-    background-color: #a1a1a1;
+    background-color: #3F3047;
     width: 100%;
+    border-bottom: 5px solid #343434;
+    margin-bottom: 10px;
 }
 
 .nav-list {
-    color:purple;
     list-style-type: none;
     display: flex;
 }
 
-.nav-list a {
+.nav-list a, .nav-list a:visited {
     padding: 15px;
+    color:white;
+    text-decoration: none;
 }
 
 .content {
@@ -32,12 +53,14 @@ body {
 .form-wrapper {
     justify-content: center;
     margin: auto;
+    margin-top: 50px;
     max-width: 600px;
     width: 80%;
+    background-color: white;
 }
 
 form {
-    border: 5px solid #f1f1f1;
+    border: 5px solid #343434;
 }
 
 .form-title {
@@ -45,17 +68,25 @@ form {
     font-size: 18;
 }
 
+.form-items {
+    margin: auto;
+    justify-content: center;
+    text-align: left;
+    padding: 0 5%;
+}
+
 .form-items label {
     text-align: left;
     padding-left: 10px;
+    display: inline;
 }
 
 .form-items input {
     width: 100%;
     padding: 16px 8px;
     margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+    display: block;
+    border: 1px solid #343434;
     box-sizing: border-box;
 }
 
@@ -66,7 +97,7 @@ form {
 }
 
 .button-holder button {
-    background-color: #4286f4;
+    background-color: #3F3047;
     color: white;
     padding: 14px 0;
     margin: 10px 0;

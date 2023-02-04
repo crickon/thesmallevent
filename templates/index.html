@@ -5,6 +5,9 @@
 {% endblock %}
 
 {% block content %}
+{% if success %}
+    <p>Your Request has been received</p>
+{% endif %}
 <h1>{% block title %}Homepage{% endblock %}</h1>
 <p>Welcome to the Homepage</p>
 {% endblock %}

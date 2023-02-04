@@ -8,20 +8,30 @@
 
 {% block content %}
 <div class="form-wrapper">
-    <form action="/add">
+    <form action="/add" method="POST">
         <h1 class="form-title">Propose Service Event</h1>
         <div class="form-items">
-            <label for="first_name"><strong>First Name</strong></label>
+            <label for="first_name">
+                <strong>First Name</strong>
+            </label>
             <input type="text" placeholder="Enter First" name="first_name" required>
-            <label for="last_name"><strong>Last Name</strong></label>
+            <label for="last_name">
+                <strong>Last Name</strong>
+            </label>
             <input type="text" placeholder="Enter Last" name="last_name" required>
-            <label for="mail"><strong>E-mail</strong></label>
+            <label for="mail">
+                <strong>E-mail</strong>
+            </label>
             <input type="text" placeholder="Enter E-mail" name="mail" required>
-            <label for="phone"><strong>Phone Number</strong></label>
+            <label for="phone">
+                <strong>Phone Number</strong>
+            </label>
             <input type="tel" placeholder="Enter Phone Number" name="phone" required>
         </div>
         <div class="button-holder">
-            <button type="submit"><strong>Submit</strong></button>
+            <button type="submit">
+                <strong>Submit</strong>
+            </button>
         </div>
     </form>
 </div>
