@@ -4,10 +4,28 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 {% endblock %}
 
+{% block title %}Homepage{% endblock %}
+
 {% block content %}
-{% if success %}
-    <p>Your Request has been received</p>
+{% if projects %}
+    <div class="info-box">
+        <h1>Looking to Volunteer? Click on a project below to register</h1>
+    </div>    
+    
+    <div class="boxes">
+        {% for project in projects %}
+            
+            <div class="box">
+                <p>
+                    {{ project.title }}
+                </p>
+                <p>
+                    {{ project.description }}
+                </p>
+                <a class="btn" href="/event/{{ project.id }}">More Information</a>
+            </div>   
+                
+        {% endfor %}
+    </div>
 {% endif %}
-<h1>{% block title %}Homepage{% endblock %}</h1>
-<p>Welcome to the Homepage</p>
 {% endblock %}

@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {% endblock %} - TheSmallEvent</title>
     {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base-style.css')}}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
-    <nav class="nav-bar">
-        <ul class="nav-list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/volunteer">Volunteer</a></li>
-            <li><a href="/propose">Propose Project</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper">
+        <!--navigation-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/"><i class="fa fa-home fa-1x fa-fw" id="home-icon" aria-hidden="true"></i><span>Home</span></a></li>
+                <li><a href="/volunteer"><i class="fa fa-users fa-1x fa-fw" aria-hidden="true"></i><span>Voluteer</span></a></li>
+                <li><a href="/projects/submit"><i class="fa fa-comment fa-1x fa-fw" aria-hidden="true"></i><span>Propose Project</span></a></li>
+                <li><a href="/about"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i><span>About</span></a></li>
+                
+            </ul>
+        </nav>
+    </div>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul class=flashes>

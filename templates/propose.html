@@ -7,32 +7,67 @@
 {% block title %}Propose{% endblock %}
 
 {% block content %}
-<div class="form-wrapper">
-    <form action="/add" method="POST">
-        <h1 class="form-title">Propose Service Event</h1>
-        <div class="form-items">
-            <label for="first_name">
-                <strong>First Name</strong>
-            </label>
-            <input type="text" placeholder="Enter First" name="first_name" required>
-            <label for="last_name">
-                <strong>Last Name</strong>
-            </label>
-            <input type="text" placeholder="Enter Last" name="last_name" required>
-            <label for="mail">
-                <strong>E-mail</strong>
-            </label>
-            <input type="text" placeholder="Enter E-mail" name="mail" required>
-            <label for="phone">
-                <strong>Phone Number</strong>
-            </label>
-            <input type="tel" placeholder="Enter Phone Number" name="phone" required>
-        </div>
-        <div class="button-holder">
-            <button type="submit">
-                <strong>Submit</strong>
-            </button>
-        </div>
-    </form>
+<div class="box">
+    <div class="form-wrapper">
+        <form action="/projects/add" method="POST">
+            <h1 class="form-title">Propose Service Event</h1>
+            <div class="form-items">
+                <label for="contact-name">
+                    <strong>Contact Name</strong>
+                </label>
+                <input type="text" placeholder="Enter First, Last" name="contact-name" required>
+                
+                <label for="contact-email">
+                    <strong>E-mail</strong>
+                </label>
+                <input type="text" placeholder="Enter E-mail" name="contact-email" required>
+                
+                <label for="contact-phone">
+                    <strong>Phone Number</strong>
+                </label>
+                <input type="tel" placeholder="Enter Phone Number" name="contact-phone" required>
+                
+                <label for="title">
+                    <strong>Project Title</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="title" required>
+                
+                <label for="description">
+                    <strong>Project Description</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="description" required>
+
+                <label for="date">
+                    <strong>Project Date</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="date" required>
+
+                <label for="time">
+                    <strong>Project Time</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="time" required>
+
+                <label for="location">
+                    <strong>Project Location</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="location" required>
+
+                <label for="doing">
+                    <strong>What will volunteers be doing</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="doing" required>
+
+                <label for="bring-wear">
+                    <strong>What should volunteers bring or wear</strong>
+                </label>
+                <input type="text" placeholder="As it will display on the project page" name="bring-wear" required>
+            </div>
+            <div class="button-holder">
+                <button type="submit">
+                    <strong>Submit</strong>
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
 {% endblock %}

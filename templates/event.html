@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/event-style.css')}}">
+    <title>Event Details</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--navigation-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/"><i class="fa fa-home fa-1x fa-fw" id="home-icon" aria-hidden="true"></i><span>Home</span></a></li>
+                <li><a href="/volunteer"><i class="fa fa-users fa-1x fa-fw" aria-hidden="true"></i><span>Voluteer</span></a></li>
+                <li><a href="/projects/submit"><i class="fa fa-comment fa-1x fa-fw" aria-hidden="true"></i><span>Propose Project</span></a></li>
+                <li><a href="/about"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i><span>About</span></a></li>
+                
+            </ul>
+        </nav>
+    
+
+        <!--top container-->
+        <section class="top-container">
+            <header class="showcase">
+                <h1>{{ project.title }}</h1>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.link }}" class="btn">Read More</a>
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Sign Up Here!</h4>
+                <p></p>
+                <a href="" class="btn">Join</a>
+            </div>
+
+            <div class="top-box top-box-b">
+                <h4>CONTACT</h4>
+                <p class="price">Questions? Ask {{ project['contact-name'] }} via phone or email.</p>
+                <a href="" class="btn"><i class="fa fa-mobile fa-1x fa-fw" aria-hidden="true";></i><span>Call</span></a>
+                <a href="" class="btn"><i class="fa fa-at fa-1x fa-fw" aria-hidden="true";></i><span>Email</span></a>
+            </div>
+        </section>
+
+        <!--Boxes Section-->
+        <section class="boxes">
+            <div class="box">
+                <img src="{{ url_for('static', filename='image/nonprofit-icon.png')}}" width="60" height="60" alt="">
+                <h3>Organizer</h3>
+                <p3>{{ project.organizer }}</p3>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+                <h3>Date & Time</h3>
+              
+                <ul>
+                <li>{{ project.date }}</li>
+                <li>{{ project.time }}</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-check fa-3x" aria-hidden="true"></i>
+                <h3>Requirements</h3>
+                <ul>
+                <li>Minimum Age: 18 years</li>
+                <li>Event requires signed forms</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='image/google-maps.png') }}" alt="">
+                
+                <h3>Location</h3>
+                <p3>{{ project.location }}</p3>
+            </div>
+        </section>
+
+        <!-- Info Section-->
+        <section class="info">
+            <img src="{{ url_for('static', filename='image/arms.jpeg') }}" alt="">
+            <div>
+                <h2><u>More Information</h2></u>
+                <h3>What will you be doing?</h3>
+                <p>{{ project.doing }}</p>
+                <h3>What items should you bring or wear?</h3>
+                <p>{{ project['bring-wear'] }}</p>
+                <br></br>
+                <a href="{{ project.link }}" class="btn">Learn More</a>
+            </div>
+        </section>
+
+
+
+    </div>
+    <!--wrapper ends-->
+    
+</body>
+</html>
