@@ -18,7 +18,8 @@ proposals = [
         'time':'10 AM - 11:59 PM (EST)',
         'location':'677 South Main Street Blacksburg, Virginia 24060',
         'doing':'Upon arriving, you should dolor sit amet consectetur adipisicing elit. Aliquid beatae sequi corrupti voluptates quaerat et, sapiente voluptatum omnis reiciendis voluptatem eaque necessitatibus, unde ratione itaque nam vitae ipsa minus natus?',
-        'bring-wear':'Dress comfortably dolor sit amet consectetur adipisicing elit. Aliquid beatae sequi corrupti voluptates quaerat et, sapiente voluptatum omnis reiciendis voluptatem eaque necessitatibus, unde ratione itaque nam vitae ipsa minus natus?'
+        'bring-wear':'Dress comfortably dolor sit amet consectetur adipisicing elit. Aliquid beatae sequi corrupti voluptates quaerat et, sapiente voluptatum omnis reiciendis voluptatem eaque necessitatibus, unde ratione itaque nam vitae ipsa minus natus?',
+        'signups':[]
     }
 ]
 

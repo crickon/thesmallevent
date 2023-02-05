@@ -134,3 +134,7 @@ button:hover {
     border: 0;
     border-radius: 10px;
 }
+.page-name {
+    text-align: center;
+    margin: auto;
+}
